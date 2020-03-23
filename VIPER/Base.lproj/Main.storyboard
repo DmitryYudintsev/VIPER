@@ -26,7 +26,7 @@
         <!--Table Module View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TableModuleViewController" customModule="VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TableModuleViewController" customModule="VIPER" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tSH-YV-avn"/>
                     <connections>
-                        <outlet property="table" destination="juM-oa-YSz" id="8yd-Ab-awQ"/>
+                        <outlet property="table" destination="juM-oa-YSz" id="nGD-qz-4Y5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
