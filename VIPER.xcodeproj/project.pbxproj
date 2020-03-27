@@ -17,6 +17,13 @@
 		956C5F782429346A00F16F42 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C5F772429346A00F16F42 /* City.swift */; };
 		956C5F7A2429363A00F16F42 /* TableModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C5F792429363A00F16F42 /* TableModulePresenter.swift */; };
 		956C5F7C2429364700F16F42 /* TableModuleViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C5F7B2429364700F16F42 /* TableModuleViewProtocols.swift */; };
+		9577721424293C93002DDB25 /* TableModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577721324293C93002DDB25 /* TableModuleInteractorOutput.swift */; };
+		9577721624293CAE002DDB25 /* TableModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577721524293CAE002DDB25 /* TableModuleInteractor.swift */; };
+		9577721824293E4E002DDB25 /* TableModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577721724293E4E002DDB25 /* TableModuleInteractorInput.swift */; };
+		9577721C24294F77002DDB25 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577721B24294F77002DDB25 /* MainConfigurator.swift */; };
+		958E45A8242C921A006DA7B9 /* TableModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45A7242C921A006DA7B9 /* TableModuleRouter.swift */; };
+		958E45AA242C9234006DA7B9 /* TableModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45A9242C9234006DA7B9 /* TableModuleRouterInput.swift */; };
+		958E45B0242C9B82006DA7B9 /* AddCityModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		956C5F772429346A00F16F42 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		956C5F792429363A00F16F42 /* TableModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModulePresenter.swift; sourceTree = "<group>"; };
 		956C5F7B2429364700F16F42 /* TableModuleViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleViewProtocols.swift; sourceTree = "<group>"; };
+		9577721324293C93002DDB25 /* TableModuleInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		9577721524293CAE002DDB25 /* TableModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleInteractor.swift; sourceTree = "<group>"; };
+		9577721724293E4E002DDB25 /* TableModuleInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleInteractorInput.swift; sourceTree = "<group>"; };
+		9577721B24294F77002DDB25 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		958E45A7242C921A006DA7B9 /* TableModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleRouter.swift; sourceTree = "<group>"; };
+		958E45A9242C9234006DA7B9 /* TableModuleRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleRouterInput.swift; sourceTree = "<group>"; };
+		958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 				956C5F75242933F700F16F42 /* Containers */,
 				956C5F762429343500F16F42 /* ViewModels */,
 				956C5F7224292FA700F16F42 /* Models */,
+				958E45AB242C98BA006DA7B9 /* AddCityModule */,
 				956C5F6D24292F0B00F16F42 /* TableModule */,
 				956C5F6224292E8000F16F42 /* Assets.xcassets */,
 				956C5F6424292E8000F16F42 /* LaunchScreen.storyboard */,
@@ -92,8 +107,8 @@
 		956C5F6E24292F6300F16F42 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				956C5F7B2429364700F16F42 /* TableModuleViewProtocols.swift */,
 				956C5F5D24292E7F00F16F42 /* TableModuleViewController.swift */,
+				956C5F7B2429364700F16F42 /* TableModuleViewProtocols.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +116,9 @@
 		956C5F6F24292F6C00F16F42 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				9577721524293CAE002DDB25 /* TableModuleInteractor.swift */,
+				9577721324293C93002DDB25 /* TableModuleInteractorOutput.swift */,
+				9577721724293E4E002DDB25 /* TableModuleInteractorInput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -116,6 +134,8 @@
 		956C5F7124292F9200F16F42 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				958E45A7242C921A006DA7B9 /* TableModuleRouter.swift */,
+				958E45A9242C9234006DA7B9 /* TableModuleRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -132,6 +152,7 @@
 		956C5F75242933F700F16F42 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				9577721B24294F77002DDB25 /* MainConfigurator.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -141,6 +162,22 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		958E45AB242C98BA006DA7B9 /* AddCityModule */ = {
+			isa = PBXGroup;
+			children = (
+				958E45AC242C9B1D006DA7B9 /* View */,
+			);
+			path = AddCityModule;
+			sourceTree = "<group>";
+		};
+		958E45AC242C9B1D006DA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +253,17 @@
 			files = (
 				956C5F5E24292E7F00F16F42 /* TableModuleViewController.swift in Sources */,
 				956C5F782429346A00F16F42 /* City.swift in Sources */,
+				9577721424293C93002DDB25 /* TableModuleInteractorOutput.swift in Sources */,
 				956C5F74242932AC00F16F42 /* DB.swift in Sources */,
+				958E45AA242C9234006DA7B9 /* TableModuleRouterInput.swift in Sources */,
+				9577721C24294F77002DDB25 /* MainConfigurator.swift in Sources */,
+				9577721824293E4E002DDB25 /* TableModuleInteractorInput.swift in Sources */,
+				958E45B0242C9B82006DA7B9 /* AddCityModuleViewController.swift in Sources */,
 				956C5F7C2429364700F16F42 /* TableModuleViewProtocols.swift in Sources */,
 				956C5F5A24292E7F00F16F42 /* AppDelegate.swift in Sources */,
 				956C5F5C24292E7F00F16F42 /* SceneDelegate.swift in Sources */,
+				958E45A8242C921A006DA7B9 /* TableModuleRouter.swift in Sources */,
+				9577721624293CAE002DDB25 /* TableModuleInteractor.swift in Sources */,
 				956C5F7A2429363A00F16F42 /* TableModulePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,11 @@
 import Foundation
 
 protocol TableModuleViewOutput {
-    func addCity()
-    func getCityCount() -> [City]
+    func getCity() -> [City]
+    func viewIsReady()
+    func openAddCity()
 }
 
-protocol TableModuleViewInput {
+protocol TableModuleViewInput: class {
+    func reloadTable()
 }

@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-741" y="127"/>
         </scene>
-        <!--Table Module View Controller-->
+        <!--VIPER-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TableModuleViewController" customModule="VIPER" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id1" id="BYZ-38-t0r" customClass="TableModuleViewController" customModule="VIPER" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tSH-YV-avn"/>
+                    <navigationItem key="navigationItem" title="VIPER" id="tSH-YV-avn">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="KlF-ng-glb">
+                            <connections>
+                                <action selector="addCityWith_sender:" destination="BYZ-38-t0r" id="qvJ-zY-O9w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="table" destination="juM-oa-YSz" id="nGD-qz-4Y5"/>
                     </connections>
@@ -53,6 +59,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+        <!--Add City Module View Controller-->
+        <scene sceneID="VZk-QZ-fnx">
+            <objects>
+                <viewController storyboardIdentifier="id2" id="C6B-uq-I93" customClass="AddCityModuleViewController" customModule="VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6h-Gy-H0R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5PY-pO-EWr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYc-jj-Ksv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="127"/>
         </scene>
     </scenes>
 </document>

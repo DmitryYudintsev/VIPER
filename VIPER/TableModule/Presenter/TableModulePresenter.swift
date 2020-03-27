@@ -7,8 +7,34 @@
 //
 
 import Foundation
+import UIKit
 
 class TableModulePresenter {
+    weak var view: TableModuleViewInput!
+    var cityList: [City]!
+    var interactor: TableModuleInteractorInput!
+    var router: TableModuleRouterInput!
+}
+
+extension TableModulePresenter: TableModuleViewOutput {
     
+    func getCity() -> [City] {
+        return cityList
+    }
+    
+    func viewIsReady() {
+        interactor.requestCityList()
+    }
+    
+    func openAddCity() {
+        router.moveToAddCity()
+    }
+}
+
+extension TableModulePresenter: TableModuleInteractorOutput {
+    func moveCityesToPresenter(cityes: [City]) {
+       cityList = cityes
+       //view.reloadTable()
+    }
 }
 
