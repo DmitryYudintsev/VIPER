@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95247818242E2E1D00C33B1C /* AddCityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247817242E2E1D00C33B1C /* AddCityConfigurator.swift */; };
 		956C5F5A24292E7F00F16F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C5F5924292E7F00F16F42 /* AppDelegate.swift */; };
 		956C5F5C24292E7F00F16F42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C5F5B24292E7F00F16F42 /* SceneDelegate.swift */; };
 		956C5F5E24292E7F00F16F42 /* TableModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C5F5D24292E7F00F16F42 /* TableModuleViewController.swift */; };
@@ -24,9 +25,16 @@
 		958E45A8242C921A006DA7B9 /* TableModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45A7242C921A006DA7B9 /* TableModuleRouter.swift */; };
 		958E45AA242C9234006DA7B9 /* TableModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45A9242C9234006DA7B9 /* TableModuleRouterInput.swift */; };
 		958E45B0242C9B82006DA7B9 /* AddCityModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */; };
+		958E45B8242E254D006DA7B9 /* AddCityModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45B7242E254D006DA7B9 /* AddCityModulePresenter.swift */; };
+		958E45BA242E25B9006DA7B9 /* AddCityModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45B9242E25B9006DA7B9 /* AddCityModuleProtocols.swift */; };
+		958E45BC242E2783006DA7B9 /* AddCityModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45BB242E2783006DA7B9 /* AddCityModuleInteractor.swift */; };
+		958E45C0242E27D3006DA7B9 /* AddCityModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45BF242E27D3006DA7B9 /* AddCityModuleInteractorInput.swift */; };
+		958E45C2242E284B006DA7B9 /* AddCityModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45C1242E284B006DA7B9 /* AddCityModuleRouterInput.swift */; };
+		958E45C4242E286F006DA7B9 /* AddCityModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E45C3242E286F006DA7B9 /* AddCityModuleRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95247817242E2E1D00C33B1C /* AddCityConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityConfigurator.swift; sourceTree = "<group>"; };
 		956C5F5624292E7F00F16F42 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C5F5924292E7F00F16F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		956C5F5B24292E7F00F16F42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,12 @@
 		958E45A7242C921A006DA7B9 /* TableModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleRouter.swift; sourceTree = "<group>"; };
 		958E45A9242C9234006DA7B9 /* TableModuleRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModuleRouterInput.swift; sourceTree = "<group>"; };
 		958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleViewController.swift; sourceTree = "<group>"; };
+		958E45B7242E254D006DA7B9 /* AddCityModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModulePresenter.swift; sourceTree = "<group>"; };
+		958E45B9242E25B9006DA7B9 /* AddCityModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleProtocols.swift; sourceTree = "<group>"; };
+		958E45BB242E2783006DA7B9 /* AddCityModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleInteractor.swift; sourceTree = "<group>"; };
+		958E45BF242E27D3006DA7B9 /* AddCityModuleInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleInteractorInput.swift; sourceTree = "<group>"; };
+		958E45C1242E284B006DA7B9 /* AddCityModuleRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleRouterInput.swift; sourceTree = "<group>"; };
+		958E45C3242E286F006DA7B9 /* AddCityModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModuleRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				9577721B24294F77002DDB25 /* MainConfigurator.swift */,
+				95247817242E2E1D00C33B1C /* AddCityConfigurator.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -179,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */,
+				958E45B9242E25B9006DA7B9 /* AddCityModuleProtocols.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +202,7 @@
 		958E45B4242E2479006DA7B9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				958E45B7242E254D006DA7B9 /* AddCityModulePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -193,6 +210,8 @@
 		958E45B5242E249A006DA7B9 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				958E45BB242E2783006DA7B9 /* AddCityModuleInteractor.swift */,
+				958E45BF242E27D3006DA7B9 /* AddCityModuleInteractorInput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -200,6 +219,8 @@
 		958E45B6242E24D9006DA7B9 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				958E45C1242E284B006DA7B9 /* AddCityModuleRouterInput.swift */,
+				958E45C3242E286F006DA7B9 /* AddCityModuleRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -275,15 +296,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958E45B8242E254D006DA7B9 /* AddCityModulePresenter.swift in Sources */,
 				956C5F5E24292E7F00F16F42 /* TableModuleViewController.swift in Sources */,
+				958E45C2242E284B006DA7B9 /* AddCityModuleRouterInput.swift in Sources */,
+				958E45BC242E2783006DA7B9 /* AddCityModuleInteractor.swift in Sources */,
+				958E45C4242E286F006DA7B9 /* AddCityModuleRouter.swift in Sources */,
 				956C5F782429346A00F16F42 /* City.swift in Sources */,
 				9577721424293C93002DDB25 /* TableModuleInteractorOutput.swift in Sources */,
+				958E45BA242E25B9006DA7B9 /* AddCityModuleProtocols.swift in Sources */,
+				958E45C0242E27D3006DA7B9 /* AddCityModuleInteractorInput.swift in Sources */,
 				956C5F74242932AC00F16F42 /* DB.swift in Sources */,
 				958E45AA242C9234006DA7B9 /* TableModuleRouterInput.swift in Sources */,
 				9577721C24294F77002DDB25 /* MainConfigurator.swift in Sources */,
 				9577721824293E4E002DDB25 /* TableModuleInteractorInput.swift in Sources */,
 				958E45B0242C9B82006DA7B9 /* AddCityModuleViewController.swift in Sources */,
 				956C5F7C2429364700F16F42 /* TableModuleViewProtocols.swift in Sources */,
+				95247818242E2E1D00C33B1C /* AddCityConfigurator.swift in Sources */,
 				956C5F5A24292E7F00F16F42 /* AppDelegate.swift in Sources */,
 				956C5F5C24292E7F00F16F42 /* SceneDelegate.swift in Sources */,
 				958E45A8242C921A006DA7B9 /* TableModuleRouter.swift in Sources */,

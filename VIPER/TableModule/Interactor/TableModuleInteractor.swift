@@ -15,5 +15,6 @@ class TableModuleInteractor {
 extension TableModuleInteractor: TableModuleInteractorInput {
     func requestCityList() {
         self.output?.moveCityesToPresenter(cityes: db)
+        print("interactorTable", db)
     }
 }

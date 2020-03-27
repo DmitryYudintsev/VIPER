@@ -46,9 +46,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="VIPER" id="tSH-YV-avn">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="9Ge-OY-azL">
+                            <connections>
+                                <action selector="refresh:" destination="BYZ-38-t0r" id="MeI-VG-9Hb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="KlF-ng-glb">
                             <connections>
-                                <action selector="addCityWith_sender:" destination="BYZ-38-t0r" id="qvJ-zY-O9w"/>
+                                <action selector="addCity:" destination="BYZ-38-t0r" id="nDU-ZF-JHu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -13,8 +13,13 @@ class TableModuleViewController: UIViewController {
     @IBOutlet weak var table: UITableView!
     var output: TableModuleViewOutput!
     var configurator: MainConfiguratorProtocol = MainConfigurator()
-    @IBAction func addCity(_sender: UIButton) {
+    @IBAction func addCity(_ sender: UIButton) {
         output.openAddCity()
+    }
+    
+    @IBAction func refresh(_ sender: UIButton) {
+        output.viewIsReady()
+        table.reloadData()
     }
     
     override func viewDidLoad() {
@@ -22,6 +27,7 @@ class TableModuleViewController: UIViewController {
         configurator.configure(with: self)
         setupTable()
         output.viewIsReady()
+        
     }
     
     func setupTable() {

@@ -11,9 +11,12 @@ import UIKit
 class AddCityModuleViewController: UIViewController {
     
     @IBOutlet weak var addCityTextField: UITextField!
+    var output: AddCityModuleViewOutput!
+    var configurator: AddCityConfiguratorProtocol = AddCityConfigurator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configurator.configure(with: self)
         setNavigationBar()
     }
     
@@ -28,6 +31,10 @@ class AddCityModuleViewController: UIViewController {
     }
 
     @objc func done() {
+        guard let textfield = addCityTextField.text else {return}
+        if textfield != "" {
+            output.saveCity(cityName: textfield)
+        }
     }
     
 }
