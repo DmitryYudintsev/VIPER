@@ -67,13 +67,31 @@
                     <view key="view" contentMode="scaleToFill" id="r6h-Gy-H0R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1m4-tY-Qv8">
+                                <rect key="frame" x="20" y="124" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Tuj-02-e8l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1m4-tY-Qv8" firstAttribute="top" secondItem="5PY-pO-EWr" secondAttribute="top" constant="80" id="6qM-uu-yKa"/>
+                            <constraint firstItem="5PY-pO-EWr" firstAttribute="trailing" secondItem="1m4-tY-Qv8" secondAttribute="trailing" constant="20" id="bGS-Qb-v4b"/>
+                            <constraint firstItem="1m4-tY-Qv8" firstAttribute="leading" secondItem="5PY-pO-EWr" secondAttribute="leading" constant="20" id="eLl-tc-y3d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5PY-pO-EWr"/>
                     </view>
+                    <connections>
+                        <outlet property="addCityTextField" destination="1m4-tY-Qv8" id="koI-hI-Lkg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYc-jj-Ksv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="127"/>
+            <point key="canvasLocation" x="979.71014492753636" y="126.5625"/>
         </scene>
     </scenes>
 </document>

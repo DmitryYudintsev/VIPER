@@ -9,18 +9,23 @@
 import Foundation
 import UIKit
 
-class TableModuleRouter {    
+class TableModuleRouter {
+    
+    func mainViewController() -> UIViewController {
+    var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
+        while (topController.presentedViewController != nil) {
+            topController = topController.presentedViewController!
+        }
+        return topController
+    }
+    
 }
 
 extension TableModuleRouter: TableModuleRouterInput {
     func moveToAddCity() {
+        let topVC = mainViewController()
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let tableVC = sb.instantiateViewController(withIdentifier: "id1")
-        var addVC = sb.instantiateViewController(withIdentifier: "id2")
-        addVC = AddCityModuleViewController()
-        //tableVC.navigationController?.pushViewController(addVC, animated: true)
-        //let appDelegate = UIApplication.shared.delegate as! SceneDelegate
-        //appDelegate.window?.rootViewController = addVC
-        tableVC.present(addVC, animated: true, completion: nil)
+        let addVC = sb.instantiateViewController(withIdentifier: "id2")
+        topVC.present(addVC, animated: true, completion: nil)
     }
 }

@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				956C5F6E24292F6300F16F42 /* View */,
-				956C5F6F24292F6C00F16F42 /* Interactor */,
 				956C5F7024292F7600F16F42 /* Presenter */,
+				956C5F6F24292F6C00F16F42 /* Interactor */,
 				956C5F7124292F9200F16F42 /* Router */,
 			);
 			path = TableModule;
@@ -168,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				958E45AC242C9B1D006DA7B9 /* View */,
+				958E45B4242E2479006DA7B9 /* Presenter */,
+				958E45B5242E249A006DA7B9 /* Interactor */,
+				958E45B6242E24D9006DA7B9 /* Router */,
 			);
 			path = AddCityModule;
 			sourceTree = "<group>";
@@ -178,6 +181,27 @@
 				958E45AF242C9B82006DA7B9 /* AddCityModuleViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		958E45B4242E2479006DA7B9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		958E45B5242E249A006DA7B9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		958E45B6242E24D9006DA7B9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
