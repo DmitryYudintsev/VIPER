@@ -27,7 +27,11 @@ class TableModuleViewController: UIViewController {
         configurator.configure(with: self)
         setupTable()
         output.viewIsReady()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        table.reloadData()
     }
     
     func setupTable() {
