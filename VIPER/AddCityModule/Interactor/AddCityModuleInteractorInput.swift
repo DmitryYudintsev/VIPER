@@ -9,5 +9,6 @@
 import Foundation
 
 protocol AddCityModuleInteractorInput {
+    
     func refreshCityList(cityName: String)
 }

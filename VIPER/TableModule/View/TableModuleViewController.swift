@@ -10,9 +10,11 @@ import UIKit
 
 class TableModuleViewController: UIViewController {
     
-    @IBOutlet weak var table: UITableView!
+    
     var output: TableModuleViewOutput!
     var configurator: MainConfiguratorProtocol = MainConfigurator()
+    
+    @IBOutlet weak var table: UITableView!
     @IBAction func addCity(_ sender: UIButton) {
         output.openAddCity()
     }
@@ -31,6 +33,7 @@ class TableModuleViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        setupTable()
         table.reloadData()
     }
     

@@ -10,6 +10,7 @@ import Foundation
 
 
 class AddCityModulePresenter {
+    
     weak var view: AddCityModuleViewInput!
     var cityList: [City]!
     var interactor: AddCityModuleInteractorInput!
@@ -17,6 +18,7 @@ class AddCityModulePresenter {
 }
 
 extension AddCityModulePresenter: AddCityModuleViewOutput {
+    
     func saveCity(cityName: String) {
         interactor.refreshCityList(cityName: cityName)
     }

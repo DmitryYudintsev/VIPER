@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class TableModulePresenter {
+    
     weak var view: TableModuleViewInput!
     var cityList: [City]!
     var interactor: TableModuleInteractorInput!

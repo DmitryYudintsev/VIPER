@@ -15,7 +15,6 @@ protocol MainConfiguratorProtocol: class {
 class MainConfigurator: MainConfiguratorProtocol {
     
     func configure(with viewController: TableModuleViewController) {
-        //let view = TableModuleViewController()
         let interactor = TableModuleInteractor()
         let presenter = TableModulePresenter()
         let router = TableModuleRouter()

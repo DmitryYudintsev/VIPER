@@ -9,10 +9,12 @@
 import Foundation
 
 protocol AddCityModuleViewOutput {
+    
     func saveCity(cityName: String)
     func viewIsReady()
 }
 
 protocol AddCityModuleViewInput: class {
+    
     func reloadTable()
 }

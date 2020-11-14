@@ -13,6 +13,7 @@ class AddCityModuleInteractor {
 }
 
 extension AddCityModuleInteractor: AddCityModuleInteractorInput {
+    
     func refreshCityList(cityName: String) {
         db.append(City(name: cityName))
         print("addCityInteractor", db)

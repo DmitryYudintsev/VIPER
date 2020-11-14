@@ -20,7 +20,7 @@
             landmarkType = "0">
             <Locations>
                <Location
-                  uuid = "7E4EAC66-6B2C-4E71-9055-D64A73324424 - d89ec723733e2b9b"
+                  uuid = "7E4EAC66-6B2C-4E71-9055-D64A73324424 - c1b3bd630d4d6eac"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -35,7 +35,7 @@
                   offsetFromSymbolStart = "180">
                </Location>
                <Location
-                  uuid = "7E4EAC66-6B2C-4E71-9055-D64A73324424 - 941e3f69315868a"
+                  uuid = "7E4EAC66-6B2C-4E71-9055-D64A73324424 - 106c99b6ed66c3bd"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -62,10 +62,10 @@
             filePath = "VIPER/AddCityModule/Presenter/AddCityModulePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "saveCity(cityName:)"
-            landmarkType = "7">
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "AddCityModulePresenter"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,8 +80,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "refreshCityList(cityName:)"
-            landmarkType = "7">
+            landmarkName = "AddCityModuleInteractor"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

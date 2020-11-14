@@ -11,6 +11,7 @@ import UIKit
 class AddCityModuleViewController: UIViewController {
     
     @IBOutlet weak var addCityTextField: UITextField!
+    
     var output: AddCityModuleViewOutput!
     var configurator: AddCityConfiguratorProtocol = AddCityConfigurator()
 
